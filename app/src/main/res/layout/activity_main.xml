@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient"
     android:orientation="vertical"
+    android:paddingHorizontal="12dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -23,7 +24,6 @@
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -33,7 +33,6 @@
                 android:id="@+id/temperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:textColor="@color/white"
                 android:textSize="72sp"
                 tools:text="13°" />
@@ -42,16 +41,14 @@
                 android:id="@+id/minmax"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                tools:text="Max 17° | Min 12°" />
+                tools:text="@string/max_min_temperature" />
 
             <TextView
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="6dp"
                 android:textColor="@color/white"
                 android:textSize="14sp"
@@ -66,22 +63,21 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginEnd="24dp">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="84dp"
                 android:layout_height="84dp"
-                android:src="@drawable/ic_weather"/>
+                android:src="@drawable/ic_weather" />
 
             <TextView
                 android:id="@+id/iconText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="Drizzle"
                 android:textColor="@color/white"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                tools:text="Drizzle" />
         </LinearLayout>
 
     </LinearLayout>
@@ -89,10 +85,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:paddingHorizontal="12dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -103,9 +98,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Current details"
+                android:text="@string/current_details"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -113,27 +107,26 @@
                 android:id="@+id/pressure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                tools:text="Pressure: 100 mBar"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:text="@string/pressure" />
 
             <TextView
                 android:id="@+id/humidity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                tools:text="Humidity: 30%"
-                android:textSize="16sp" />
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                tools:text="@string/humidity" />
 
             <TextView
                 android:id="@+id/visibility"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginBottom="12dp"
-                tools:text="Visibility: 20km"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:text="@string/visibility" />
 
         </LinearLayout>
 
@@ -147,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:text="Wind"
+                android:text="@string/wind"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -156,22 +149,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                tools:text="13 km/h"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:text="@string/wind_km_h" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:background="@color/white"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -182,40 +173,38 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Sunrise &amp; Sunset"
+                android:text="@string/sunrise_amp_sunset"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                android:text="Sunrise"
+                android:text="@string/sunrise"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                android:text="Sunset"
+                android:layout_marginTop="4dp"
+                android:text="@string/sunset"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                android:text="Length of day"
+                android:layout_marginTop="4dp"
+                android:text="@string/length_of_day"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginBottom="12dp"
-                android:text="Remaining day light"
+                android:text="@string/remaining_day_light"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -224,57 +213,51 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                tools:text="Sunrise &amp; Sunset"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:visibility="invisible" />
+                android:visibility="invisible"
+                tools:text="Sunrise &amp; Sunset" />
 
             <TextView
                 android:id="@+id/sunrise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
                 android:layout_marginTop="12dp"
-                tools:text="05:06 AM"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:text="05:06 AM" />
 
             <TextView
                 android:id="@+id/sunset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                tools:text="08:01 PM"
-                android:textSize="16sp" />
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                tools:text="08:01 PM" />
 
             <TextView
                 android:id="@+id/lengthOfDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
-                tools:text="13h 47m"
-                android:textSize="16sp" />
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                tools:text="13h 47m" />
 
             <TextView
                 android:id="@+id/remainingDayLight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginBottom="12dp"
-                tools:text="1h 34m"
-                android:textSize="16sp" />
-
-
+                android:textSize="16sp"
+                tools:text="1h 34m" />
         </LinearLayout>
-
-
     </LinearLayout>
-
 
 </LinearLayout>
