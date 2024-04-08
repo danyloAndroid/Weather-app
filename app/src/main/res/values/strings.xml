@@ -7,9 +7,10 @@
     <string name="sunset">Sunset</string>
     <string name="length_of_day">Length of day</string>
     <string name="remaining_day_light">Remaining day light</string>
-    <string name="max_min_temperature">Max 17° | Min 12°</string>
-    <string name="pressure">Pressure: 100 mBar</string>
-    <string name="humidity">Humidity: 30%</string>
-    <string name="visibility">Visibility: 20km</string>
-    <string name="wind_km_h">13 km/h</string>
+    <string name="max_min_temperature">Max %1$d° | Min %2$d°</string>
+    <string name="pressure">Pressure: %d mBar</string>
+    <string name="humidity">Humidity: %d</string>
+    <string name="visibility">Visibility: %d km</string>
+    <string name="wind_km_h">%d km/h</string>
+    <string name="temperature">%d°</string>
 </resources>
